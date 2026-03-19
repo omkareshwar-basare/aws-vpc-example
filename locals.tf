@@ -2,7 +2,6 @@ locals {
   project = var.project
   environment = var.environment
   terraform = true
-}
 
 vpc_final_tags = merge(
   {
@@ -10,3 +9,4 @@ vpc_final_tags = merge(
   },
   var.vpc_tags
 )
+}
