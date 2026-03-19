@@ -4,7 +4,6 @@ locals {
   terraform   = true
 
   vpc_final_tags = merge(
-    local.common_tags,
     {
       Name = "${local.project}-${local.environment}-vpc"
     },
@@ -12,7 +11,6 @@ locals {
   )
 
   igw_tags = merge(
-    local.common_tags,
     {
       Name = "${local.project}-${local.environment}-igw"
     },
