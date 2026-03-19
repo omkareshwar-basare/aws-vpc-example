@@ -20,3 +20,9 @@ variable "vpc_tags" {
   type        = map(string)
   default = {}
 }
+
+variable "igw_tags" {
+  description = "Tags for the Internet Gateway"
+  type        = map(string)
+  default = {}
+}
