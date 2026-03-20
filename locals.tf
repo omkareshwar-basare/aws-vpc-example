@@ -20,4 +20,10 @@ locals {
 
 az_names = slice(data.aws_availability_zones.available.names, 0, 2)
  
+public_subnet_tgs = merge(
+    {
+      Name = "${var.project}-${var.environment}-public-subnet"
+    },
+    var.public_subnet_tags
+  )
 }
