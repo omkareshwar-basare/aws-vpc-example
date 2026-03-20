@@ -65,3 +65,21 @@ variable "database_subnet_tags" {
 }
 
 
+variable "public_route_table_tags" {
+  description = "Tags for public route table"
+  type        = map(string)
+  default     = {}
+}
+
+variable "private_route_table_tags" {
+  description = "Tags for private route table"
+  type        = map(string)
+  default     = {}
+}
+
+variable "database_route_table_tags" {
+  description = "Tags for database route table"
+  type     = map(string)
+  default  = {}
+}
+
